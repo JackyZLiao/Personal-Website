@@ -1,4 +1,129 @@
 body {
-    display: block;
-    margin: auto;
+    font-family: 'Glacial Indifference', sans-serif;
+    color: #3E3025;
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+#namecard {
+  animation: slideInFromTop 1s ease-in-out;
+}
+
+#learn {
+  animation: slideInFromTop 1.2s ease-in-out;
+}
+
+#line1 {
+  animation: slideInFromTop 1.1s ease-in-out;
+}
+
+#resume {
+  animation: slideInFromTop 1s ease-in-out;
+}
+
+#line2 {
+  animation: slideInFromTop 0.9s ease-in-out;
+}
+
+#projects {
+  animation: slideInFromTop 0.8s ease-in-out;
+}
+
+#instagram {
+  animation: slideInFromTop 0.8s ease-in-out;
+}
+
+#facebook {
+  animation: slideInFromTop 1s ease-in-out;
+
+}
+
+#github {
+  animation: slideInFromTop 1.2s ease-in-out;
+}
+
+#linkedin {
+  animation: slideInFromTop 1.4s ease-in-out;
+}
+
+hr {
+  width: 72%;
+  border: 2px solid black;
+  margin: 0.4vw 0 0.4vw 15%;
+}
+#name {
+  font-size: 2.8vw;
+}
+#compsci {
+  font-size: 1.8vw;
+}
+#namecard {
+  max-width: 80%;
+  height: auto;
+}
+#left {
+  background-color: white;
+}
+#terminal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #252a33;
+}
+.btn {
+  padding: 0.1vw 0.1vw;
+  border: none;
+  color: #3E3025;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 1.1vw;
+  border-radius: 0.6vw;
+  text-align: right;
+  width: auto;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+.btn:active {
+  transform: scale(0.9);
+}
+
+.image-button {
+  width: 2.4vw;
+  height: 2.4vw;
+  background: transparent;
+  border: none;
+  margin: 1vw;
+}
+
+.image-button img {
+  width: 2.4vw;
+  height: 2.4vw;
+  border: none;
+}
+
+.image-button:hover {
+  transform: scale(1.1);
+}
+.image-button:active {
+  transform: scale(0.9);
 }

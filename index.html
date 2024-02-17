@@ -8,144 +8,6 @@
         <link rel="stylesheet" href="termynal.css">
         <link href="styles.css" rel="stylesheet">
         <title>Hello, World!</title>
-        <style>
-            body {
-                font-family: 'Glacial Indifference', sans-serif;
-                color: #3E3025;
-            }
-
-            @keyframes slideInFromTop {
-              from {
-                transform: translateY(-500px);
-                opacity: 0;
-              }
-              to {
-                transform: translateY(0);
-                opacity: 1;
-              }
-            }
-
-            @keyframes fadeIn {
-              0% {
-                opacity: 0;
-              }
-              100% {
-                opacity: 1;
-              }
-            }
-
-
-            #namecard {
-              animation: slideInFromTop 1s ease-in-out;
-            }
-
-            #learn {
-              animation: slideInFromTop 1.2s ease-in-out;
-            }
-
-            #line1 {
-              animation: slideInFromTop 1.1s ease-in-out;
-            }
-
-            #resume {
-              animation: slideInFromTop 1s ease-in-out;
-            }
-
-            #line2 {
-              animation: slideInFromTop 0.9s ease-in-out;
-            }
-
-            #projects {
-              animation: slideInFromTop 0.8s ease-in-out;
-            }
-
-            #instagram {
-              animation: slideInFromTop 0.8s ease-in-out;
-            }
-
-            #facebook {
-              animation: slideInFromTop 1s ease-in-out;
-
-            }
-
-            #github {
-              animation: slideInFromTop 1.2s ease-in-out;
-            }
-
-            #linkedin {
-              animation: slideInFromTop 1.4s ease-in-out;
-            }
-
-
-            /* Add custom styles for visualization */
-            [class^="col-"] {
-
-            }
-            hr {
-              width: 60%;
-              border: 2px solid black;
-              margin: 0.4vw 0 0.4vw 15%;
-            }
-            #name {
-              font-size: 2.8vw;
-            }
-            #compsci {
-              font-size: 1.8vw;
-            }
-            #namecard {
-              max-width: 80%;
-              height: auto;
-            }
-            #left {
-              background-color: #F2EDDB;
-            }
-            #terminal {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              background-color: #252a33;
-              border: 1px solid #252a33;
-              border-radius: 0vw;
-            }
-            .btn {
-              padding: 0.1vw 0.1vw;
-              border: none;
-              color: #3E3025;
-              background-color: transparent;
-              font-weight: bold;
-              font-size: 1.1vw;
-              border-radius: 0.6vw;
-              text-align: right;
-              width: auto;
-            }
-            .btn:hover {
-              transform: scale(1.04);
-            }
-            .btn:active {
-              transform: scale(0.96);
-            }
-
-            .image-button {
-              width: 2.4vw;
-              height: 2.4vw;
-              background: transparent;
-              border: none;
-              margin: 1vw;
-            }
-
-            .image-button img {
-              width: 2.4vw;
-              hieght: 2.4vw;
-            }
-
-            .image-button:hover {
-              transform: scale(1.03);
-            }
-            .image-button:active {
-              transform: scale(0.97);
-            }
-        </style>
-
     </head>
     <body>
       <div class="container-fluid">
@@ -154,7 +16,7 @@
               <div class="row">
                 <div class="col">
                   <div style="margin-top: 15vw;">
-                    <img id="namecard" src="namecard.png" class="img-fluid mx-auto">
+                    <img id="namecard" src="photos/namecard.png" class="img-fluid mx-auto">
                   </div>
                 </div>
               </div>
@@ -162,15 +24,15 @@
                 <div class="col-sm-6"></div>
                 <div class="col-sm-5" >
                   <!-- Learn more about me button -->
-                  <div class="d-grid col-6 mx-auto" style="margin-top: 1vw;">
+                  <div class="d-grid col-9 mx-auto" style="margin-top: 1vw;">
                     <button id="learn" type="button" class="btn">Learn More About Me</button>
                   </div>
                   <hr id="line1">
-                  <div class="d-grid col-6 mx-auto">
+                  <div class="d-grid col-9 mx-auto">
                     <button id="resume" type="button" class="btn">Resume</button>
                   </div>
                   <hr id="line2">
-                  <div class="d-grid col-6 mx-auto">
+                  <div class="d-grid col-9 mx-auto">
                     <button id="projects" type="button" class="btn">My Projects</button>
                   </div>
                 </div>
@@ -181,24 +43,24 @@
                 <div style="margin-top: 12.3vw;">
                   <a href="https://www.instagram.com/jacky_liao/">
                     <button id="instagram" type="image-button" class="image-button">
-                      <img src="instagram.png">
+                      <img src="photos/instagram.png">
                     </button>
                   </a>
 
                   <a href="https://www.facebook.com/jacky.liao.562114/">
                     <button id="facebook" type="image-button" class="image-button">
-                      <img src="facebook.png">
+                      <img src="photos/facebook.png">
                     </button>
                   </a>
 
                   <a href="https://github.com/JackyZLiao">
                     <button id="github" type="image-button" class="image-button">
-                      <img src="github.png">
+                      <img src="photos/github.png">
                     </button>
                   </a>
                   <a href="https://www.linkedin.com/in/jacky-liao/">
                     <button id="linkedin" type="image-button" class="image-button">
-                      <img src="linkedin.png">
+                      <img src="photos/linkedin.png">
                     </button>
                   </a>
                 </div>
