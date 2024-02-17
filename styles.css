@@ -1,6 +1,6 @@
 body {
     font-family: 'Glacial Indifference', sans-serif;
-    color: #3E3025;
+    color: black;
 }
 
 @keyframes slideInFromTop {
@@ -91,33 +91,36 @@ hr {
 }
 .btn {
   padding: 0.1vw 0.1vw;
-  border: none;
-  color: #3E3025;
+  color: black;
   background-color: transparent;
+  border: none;
   font-weight: bold;
   font-size: 1.1vw;
-  border-radius: 0.6vw;
   text-align: right;
   width: auto;
 }
 .btn:hover {
+  background-color: transparent;
   transform: scale(1.1);
+  color: black;
 }
-.btn:active {
+.btn:active{
   transform: scale(0.9);
+  outline: none;
+  border: none;
 }
 
 .image-button {
-  width: 2.4vw;
-  height: 2.4vw;
+
+  width: 3vw;
+  height: 3vw;
   background: transparent;
   border: none;
   margin: 1vw;
 }
 
 .image-button img {
-  width: 2.4vw;
-  height: 2.4vw;
+  width: 100%;
   border: none;
 }
 
@@ -126,4 +129,8 @@ hr {
 }
 .image-button:active {
   transform: scale(0.9);
+}
+
+.text-button {
+  text-align: right;
 }

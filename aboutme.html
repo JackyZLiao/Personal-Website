@@ -26,7 +26,7 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
 
-                  <a class="nav-link" href="#">HOME</a>
+                  <a class="nav-link" href="index.html">HOME</a>
                   <a class="nav-link active" aria-current="page" href="#">ABOUT ME</a>
                   <a class="nav-link" href="#">MY PROJECT</a>
                   <a id="most-right" class="nav-link" href="#">LET'S PLAY</a>
@@ -36,12 +36,12 @@
           </nav> <!-- nav bar -->
         </div> <!-- nav bar row -->
 
-            <div class="row" style="margin-top: 1vw;">
-              <div class="col-sm-6">
-                <img src="photos/intro.png" class="start">
-              </div>
+            <div class="row" style="margin-top: 4vw;">
               <div class="col-sm-6">
                 <img src="photos/headshot.png" class="start">
+              </div>
+              <div class="col-sm-6">
+                <img src="photos/intro.png" class="start">
               </div>
             </div>
 
@@ -108,10 +108,10 @@
 
             <div class="row"  >
               <div class="col-sm-6">
-                <img src="photos/hobbiesDescription.png" class="transition-elem-X">
+                <img src="photos/hobbiesDescription.png" class="transition-elem-Y">
               </div>
               <div class="col-sm-6">
-                <div class="transition-elem-Y">
+                <div class="transition-elem-X">
                   <div id="carousel3"class="carousel carousel-dark slide" data-interval="false">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -188,10 +188,41 @@
 
             <div class="row">
               <div class="col-sm-6"  >
-                <img src="photos/CodingExplained.png" class="transition-elem-X">
+                <img src="photos/CodingExplained.png" class="transition-elem-Y">
               </div>
               <div class="col-sm-6">
-                <img src="photos/codingPic.png" class="transition-elem-Y">
+                <img src="photos/codingPic.png" class="transition-elem-X">
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="child">
+                <a href="https://www.instagram.com/jacky_liao/" target="_blank">
+                  <button id="instagram" type="image-button" class="image-button">
+                    <img src="photos/instawhite.png">
+                  </button>
+                </a>
+              </div>
+              <div class="child"> 
+                <a href="https://www.facebook.com/jacky.liao.562114/" target="_blank">
+                  <button id="facebook" type="image-button" class="image-button">
+                    <img src="photos/fbwhite.png">
+                  </button>
+                </a>
+              </div>
+              <div class="child">
+                <a href="https://github.com/JackyZLiao" target="_blank">
+                  <button id="github" type="image-button" class="image-button" >
+                    <img src="photos/githubwhite.png">
+                  </button>
+                </a>
+              </div> 
+              <div class="child">
+                <a href="https://www.linkedin.com/in/jacky-liao/" target="_blank">
+                  <button id="linkedin" type="image-button" class="image-button">
+                    <img src="photos/linkedinwhite.png">
+                  </button>
+                </a>
               </div>
             </div>
 
@@ -217,7 +248,7 @@
         
 
               transitionElements.forEach(function(element) {
-                if (isVisible(element, windowHeight)) {
+                if (isVisibleY(element, windowHeight)) {
                   var currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
                   var elementTop = element.getBoundingClientRect().top + currentScrollPosition;
                   var distanceFromTop = elementTop - windowHeight;
@@ -240,12 +271,15 @@
         
 
               transitionElements.forEach(function(element) {
-                if (isVisible(element, windowHeight)) {
+                if (isVisibleX(element, windowHeight, 0.5)) {
                   var currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
                   var elementTop = element.getBoundingClientRect().top + currentScrollPosition;
                   var distanceFromTop = elementTop - windowHeight;
+
+                  // Calculate translation
                   var translateX = Math.max(0, Math.min(0, distanceFromTop / 10)); // Adjust this value for the desired effect
                   element.style.transform = 'translateX(' + translateX + 'px)';
+
                   element.classList.add('visible');
                 } else {
                   element.classList.remove('visible');
@@ -254,14 +288,24 @@
             });
           });
 
-          // function to see if element is visible within viewport 
-          function isVisible(el, windowHeight) {
+          // function to see if element is visible within viewport for vertical transition
+          function isVisibleY(el, windowHeight) {
             var rect = el.getBoundingClientRect();
             return (
               // if top of element is above the viewport and bottom of element is below viewport
               rect.top <= windowHeight && rect.bottom >= 0
             );
           }
+          // function to see if element is visible within viewport for horizontal transition
+          function isVisibleX(el, windowHeight, threshold) {
+            var rect = el.getBoundingClientRect();
+            var topThreshold = windowHeight * threshold;
+            return (
+              // if top of element is above the viewport and bottom of element is below viewport
+              rect.top <= (windowHeight - topThreshold) && rect.bottom >= topThreshold
+            );
+          }
+
 
         </script>
 
