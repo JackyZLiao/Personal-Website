@@ -88,6 +88,9 @@ hr {
   justify-content: center;
   align-items: center;
   background-color: #252a33;
+  background-color: white;
+  padding-top: 2vw;
+  padding-right: 3vw;
 }
 .btn {
   padding: 0.1vw 0.1vw;
@@ -134,3 +137,4 @@ hr {
 .text-button {
   text-align: right;
 }
+
