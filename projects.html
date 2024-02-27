@@ -4,10 +4,191 @@
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-        <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link href="projects.css" rel="stylesheet">
         <title>Projects</title>
     </head>
     <body>
+        <div class="row" style="margin-top: 0">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">HOME</a>
+                    <a class="nav-link" aria-current="page" href="aboutme.html">ABOUT ME</a>
+                    <a class="nav-link active" href="projects.html">MY PROJECTS</a>
+                    <a id="most-right" class="nav-link" href="#">LET'S PLAY</a>
+                  </div>
+                </div>
+              </div> 
+            </nav> 
+        </div> 
+
+        <div class="row">
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-content"> 
+                        <div class="front">
+                            <div class="card mb-3">
+                                <video autoplay loop>
+                                    <source src="photos/expense-tracker.mp4">
+                                </video>
+                                <div id="front1" class="card-body">
+                                    <p><h4 class="card-title" style="display: inline;"> EXPENSE TRACKER </h4><small class="text-muted"> &nbsp; &nbsp;PYTHON PROGRAM </small></p>
+                                    <p class="card-text"> <i>Designed and developed a personalised expense tracker as a proactive solution for personal finance management.</i> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="card mb-3"> 
+                                <div class="card-body">
+                                    <p class="card-text"> <b> Project Background </b> </p>
+                                    <p> This project stemmed from a need to be more conscious of my money. I implemented numerous features to better track and manage my finances. This includes a monthly view of expenses, category breakdowns, the ability to set and track budgets and more. </p>
+                                    <p class="card-text"> The tracker leverages CSV files to store and retrieve expense data, and uses python functions to filter and display expense data in meaningful and insightful ways.</p>
+                                    <p class="card-text"> This was a fun and practical project that solved a big issue in my life, and I still use this regularly to keep up with my finances. </p>
+                                    <p class="card-text"> <b> Languages/Technologies </b>
+                                    <p> Python | CSV </p>   
+                                    <p class="card-text"> <b> Concepts </b> </p>
+                                    <p> CSV Module | File Handling | Input Validation | Data parsing and formatting | Data Validation | Command-Line Interface (CLI) </p>
+                                    <br>
+                                    <div class="d-grid gap-2 col-6"> 
+                                        <a href="https://github.com/JackyZLiao/Expense-Tracker" target="_blank">
+                                            <button class="btn btn-primary" type="button"> Source Code </button>
+                                        </a>
+                                    </div>
+                                    <br>
+                                    <p class="card-text"><small class="text-muted">Status: need to implement a front-end </small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-content"> 
+                        <div class="front">
+                            <div class="card">
+                                <video autoplay loop>
+                                    <source src="photos/spellchecker.mp4">
+                                </video>
+                                <div class="card-body">
+                                    <p><h4 class="card-title" style="display: inline;"> SPELL CHECKER </h4><small class="text-muted"> &nbsp; &nbsp; C PROGRAM </small></p>
+                                    <p class="card-text"> <i> C-based spell-checking tool that leverages hash tables to efficiently identify misspelled words in text files. </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="card mb-3"> 
+                                <div class="card-body">
+                                    <p class="card-text"> <b> Project Background </b> </p>
+                                    <p class="card-text">  This project was my first project I did using the language I started with, C. This was a simple but fun project that helped sharpen some of my coding skills and hone in on my knowledge of data structures and algorithms. </p>
+                                    <p class="card-text"> It takes in a dictionary, and loads it into a dynamically allocated hash-table. In order to reduce collisions, I used  a variation of the "djb2" hash function developed by Daniel J.Bernstein. </p>
+                                    <p class="card-text"> The use of a collision-reducing hash function allows the dictionary to load in a 143,091 word dictionary and check a 17,756 word text file in 0.05 seconds. </p>
+                                    <p class="card-text"> <b> Languages/Technologies </b>
+                                    <p> C </p>   
+                                    <p class="card-text"> <b> Concepts </b> </p>
+                                    <p> Pointers | Hash tables | Hash functions | Dynamic Memory Allocation | Data Structures and Algorithms </p>
+                                    <br>
+                                    <div class="d-grid gap-2 col-6"> 
+                                        <a href="https://github.com/JackyZLiao/Spellchecker" target="_blank">
+                                            <button class="btn btn-primary" type="button"> Source Code </button>
+                                        </a>
+                                    </div>
+                                    <br>
+                                    <p class="card-text"><small class="text-muted">Status: Complete </small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="row2" class="row align-items-start">
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-content"> 
+                        <div class="front">
+                            <div class="card mb-3">
+                                <video autoplay loop>
+                                    <source src="photos/web showcase.mp4">
+                                </video>
+                                <div id="front1" class="card-body">
+                                    <p><h4 class="card-title" style="display: inline;"> PERSONAL WEBSITE </h4><small class="text-muted"> &nbsp; &nbsp; HTML/CSS WEBPAGE </small></p>
+                                    <p class="card-text"> <i> Created a personal portfolio website as a means to professionally display my projects, skills and experiences. </i> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="card mb-3"> 
+                                <div class="card-body">
+                                    <p class="card-text"> <b> Project Background </b> </p>
+                                    <p> As a passionate coder, I wanted a unique and captivating way to express my passion and interests. Motivated by this desire, I've created this digital space reflects my technical skills, creativity and knack for problem-solving. </p>
+                                    <p class="card-text"> Before designing this website, I had no experience/exposure to front-end development. Since I had to learn HTML/CSS from scratch, this project means so much more to me. </p>
+                                    <p class="card-text"> The great thing about front-end development is that there is a tangible product to show for all your effort. Although it is far from finished, I am extremely proud of this project, and I hope you enjoy it too! </p>
+                                    <p class="card-text"> <b> Languages/Technologies </b>
+                                    <p> HTML | CSS | JavaScript </p>   
+                                    <p class="card-text"> <b> Concepts </b> </p>
+                                    <p> Frontend Development | Responsive Design | UI/UX Design | Event Handling | DOM Manipulation  </p>
+                                    <br>
+                                    <div class="d-grid gap-2 col-6"> 
+                                        <a href="https://github.com/JackyZLiao/Personal-Website" target="_blank">
+                                            <button class="btn btn-primary" type="button"> Source Code </button>
+                                        </a>
+                                    </div>
+                                    <br>
+                                    <p class="card-text"><small class="text-muted">Status: work in progress </small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-content"> 
+                        <div class="front">
+                            <div class="card">
+                                <video autoplay loop>
+                                    <source src="photos/coming soon.mp4">
+                                </video>
+                                <div class="card-body">
+                                    <p><h4 class="card-title" style="display: inline;"> RUN LOGGER </h4><small class="text-muted"> &nbsp; &nbsp; PYTHON PROGRAM </small></p>
+                                    <p class="card-text"> <i> An application that leverages the Strava API to track and analyse running activity for you and your friends.  </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="card mb-3"> 
+                                <div class="card-body">
+                                    <p class="card-text"> <b> Project Background </b> </p>
+                                    <p class="card-text"> As a way to for my friends and I to keep motivated to run, I developed a simple way to track our weekly mileage. Finding it difficult to track each other's mileage on the Strava app, I turned a potential problem to an opportunity to learn and develop my skills. </p>
+                                    <p class="card-text"> So utilising Strava's API, I proccessed and packaged run data into useful information that my friend's and I could use to track our mileage. This includes weekly views of our runs as well as other crucial data points. </p>
+                                    <p class="card-text">It was extremely fulfilling to be able to develop something that could serve a useful purpose for not only my hobbie, but also my friends.</p>
+                                    <p class="card-text"> <b> Languages/Technologies </b>
+                                    <p> Python | CSV | Pandas </p>   
+                                    <p class="card-text"> <b> Concepts </b> </p>
+                                    <p> API Integration | CSV Module | OAuth Authentication | RESTful API | Data Processing | Pandas DataFrame | Visualisation Libraries </p>
+                                    <br>
+                                    <div class="d-grid gap-2 col-6"> 
+                                        <a href="https://github.com/JackyZLiao/Spellchecker" target="_blank">
+                                            <button class="btn btn-primary" type="button"> Source Code </button>
+                                        </a>
+                                    </div>
+                                    <br>
+                                    <p class="card-text"><small class="text-muted">Status: Complete </small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

@@ -1,0 +1,97 @@
+@media (min-height: 800px){
+    body {
+    }
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.1vw;
+}
+.col {
+    display: flex;
+    justify-content: space-around;
+}
+.card {
+    width: 35vw;
+    font-size: 95%;
+    border: none;
+}
+.card-body {
+    padding-left: 10px;
+}
+video {
+    border-radius: 15px;
+}
+.flip-card {
+    width: 35vw;
+    height: 50vh;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .flip-card-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-content {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+  }
+  
+  .front, .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border-radius: 5px;
+    backface-visibility: hidden;
+  }
+  
+  .back {
+    transform: rotateY( 180deg );
+    width: 100%;
+    height: 100%;
+  }
+
+    .navbar-nav {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .navbar {
+        background-color: white;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 1.15vw;
+        margin: 0 2vw;
+        margin-left: 3vw;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+    }
+    
+    #row2 {
+        margin-top: 25%;
+        margin-bottom: 25%;
+    }
+

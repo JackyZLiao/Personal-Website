@@ -23,6 +23,7 @@ body {
 }
 
 .navbar-nav .nav-link {
+    font-family: "Montserrat", sans-serif;;
     font-size: 1.15vw;
     margin-right: 1.5vw;
     padding-left: 1vw;
