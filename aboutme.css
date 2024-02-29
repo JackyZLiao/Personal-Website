@@ -1,104 +1,174 @@
 
-.navbar-nav {
-    margin-left: auto;
-}
-
-.navbar {
-    position: fixed;
-    background-color: white;
-    z-index: 1000;
-}
-
 body {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    background-color: white;
-    height: 100%;
+    font-family: "Poppins", san-serif;
+    overflow-x: hidden;
 }
 
-.vertical-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Styling for sections  */
+section {
+    display: grid;
+    height: 100vh;
 }
-
-.navbar-nav .nav-link {
-    font-family: "Montserrat", sans-serif;;
-    font-size: 1.15vw;
-    margin-right: 1.5vw;
-    padding-left: 1vw;
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s;
 }
-#most-right {
-    margin-right: 3.5vw;
-}
-
-.transition-elem-X {
-    display: block;
-    width: 100%;
-    transform: translateX(100%);
-    transition: transform 0.9s ease-in-out;
-}
-
-.transition-elem-X.visible{
+.show {
+    opacity: 1;
     transform: translateX(0);
 }
 
-.transition-elem-Y {
-    display: block;
-    width: 100%;
-    transform: translateY(50%);
-    transition: transform 0.9s ease-in-out;
+.heading-slideshow{
+    background-color: black;
+    color: white;
+    place-items: center;
+    align-content: center;
 }
 
-.transition-elem-Y.visible{
+.hidden2 {
+    opacity: 0;
+    transform: translateY(150%);
+    transition: all 1s;
+}
+
+.show2 {
+    opacity: 1;
     transform: translateY(0);
 }
-.row {
-    margin-top: 1.5vw;
+
+
+/* styling for nav bar*/
+.navbar-nav {
+    margin-left: auto;
 }
+.navbar {
+    position: fixed;
+    background-color: transparent;
+    z-index: 1000;
+    mix-blend-mode: difference;
+}
+.navbar-nav .nav-link {
+    font-family: "Poppins", sans-serif;;
+    font-size: 1.3vw;
+    font-weight: 550;
+    margin: 0 2vw;
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+    margin-left: 2vw;
+    font-size: 2vw;
+    font-weight: 700;
+
+}
+/* Styling for sections*/
 .start {
     display: block;
     width: 100%;
 }
 
-@keyframes slideInFromTop {
+.hidden.one {
+    height: 105vh;
+}
+.hidden.two {
+    background-color: black;
+    color: white;
+    place-items: center;
+    align-content: center;
+}
+.hidden.four {
+    background-color: black;
+    color: white;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    height: 50vw;
+}
+.hidden.five {
+    place-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+}
+.work {
+    width: 100%;
+}
+
+.work-photo:nth-child(0) {
+    transition-delay: 200ms;
+}
+.hidden.six {
+    background-color: black;
+    color: white;
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.hidden.seven {
+    display: block;
+    width: 100%;
+}
+
+.hidden.eight {
+    background-color: black;
+    color: white;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    height: 50vw;
+}
+
+.hidden.ten {
+    background-color: black;
+    color: white;
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.gallery {
+    white-space: nowrap; 
+}
+
+.slider {
+    display: inline-block;
+    animation: 15s slide infinite linear;
+}
+.slider img {
+    height: 65vh;
+    margin: 10px;
+}
+
+@keyframes slide {
     from {
-        transform: translateY(-500px);
-        opacity: 0;
+        transform: translateX(0)
     }
     to {
-        transform: translateY(0);
-        opacity: 1;
+        transform: translateX(-100%);
     }
 }
 
-.start {
-    animation: slideInFromTop 1s ease-in-out;
+.heading {
+    position: absolute;
+    font-size: 11vh;
+    font-weight: 600;
+    color: white;
 }
 
-.image-button {
-    width: 3.5vw;
-    height: 3.5vw;
-    background: transparent;
-    border: none;
-    margin: 1vw 2vw 1vw 2vw;
-  }
-  
-  .image-button img {
-    width: 100%;
-    border: none;
-  }
-  
-  .image-button:hover {
-    transform: scale(1.1);
-  }
-  .image-button:active {
-    transform: scale(0.9);
-  }
-    
- .flex {
+.gallery.with-vid {
     display: flex;
-    justify-content: center;
-    background-color: black;
-    margin-top: 3vw;
-  }
+    white-space: nowrap; 
+}
+.slider.with-vid {
+    display: flex;
+}
+
+.slider video {
+    position: relative;
+    height: 65vh;
+    margin: 10px;
+}
+
