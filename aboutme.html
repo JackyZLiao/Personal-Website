@@ -15,33 +15,35 @@
     <title>About Me 2</title>
 </head>
 <body>
-    <div class="row" style="margin-top: 0">
+    <div class="row" style="margin-top: 1vh">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">JACKY LIAO</a>
+                <a class="navbar-brand" href="index.html">JACKY LIAO</a> <small class="small-text"> COMPUTER SCIENCE </small>
 
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link" href="index.html">HOME</a>
                         <a class="nav-link" aria-current="page" href="#">ABOUT ME</a>
                         <a class="nav-link" href="projects.html">PROJECTS</a>
-                        <a id="most-right" class="nav-link" href="#">RESUME</a>
+                        <a id="most-right" class="nav-link" href="resume.html">RESUME</a>
                     </div>
                 </div>
             </div> 
         </nav> 
     </div> 
 
-    <section class="hidden one"> 
-        <div class="row" style="margin-top: 4vw;">
-            <div class="col-sm-6">
+    <!-- <section class="hidden one"> 
+        <div class="row" style="margin-top: 1vw;">
+            <div class="col-sm-6 intro">
               <img src="photos/headshot.png" class="start">
             </div>
-            <div class="col-sm-6">
-              <img src="photos/intro.png" class="start">
+            <div class="col-sm-6 intro text">
+              
+              <h1 class="know-me"> GET TO KNOW ME </h1>
+              <p class="welcome">// welcome to my corner of the web </p>
             </div>
         </div>  
-    </section>
+    </section> -->
 
     <section class="heading-slideshow"> 
         <div class="gallery">
@@ -64,65 +66,52 @@
 
         </div>
         <div class="heading hidden2">
-            <p> MY EDUCATION </p>
+            <p> GET TO KNOW ME </p>
         </div>
     </section>
 
-    <section class="hidden three"> 
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="transition-elem-Y">
-                <div id="carousel1" class="carousel carousel-dark slide" data-interval="false">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    </div> <!-- carousel-indicators -->
-                    <div class="carousel-inner active">
-                        <div class="carousel-item active">
-                        <img src="photos/usyd.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                        <img src="photos/unsw2.png" class="d-block w-100" alt="...">
-                        </div>
-                    </div> <!-- carousel slides-->
-                    <button id="prev1" class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                </div> <!-- coursel -->]
+    <section class="hidden new"> 
+      <div class="row">
+        <div class="col-sm-6 ess">
+            <div id="carousel" class="carousel slide carousel-vertical slide" data-interval="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner active">
+                <div class="carousel-item active">
+                    <img src="photos/Grad.png" class="d-block w-100" alt="...">
                 </div>
-            </div>
-            
-            <div class="col-sm-6">
-                <div class>
-                <div id="carousel2" class="carousel slide carousel-vertical carousel-dark slide" data-interval="false">
-                    <div class="carousel-inner active">
-                    <div class="carousel-item active">
-                        <img src="photos/ESSDescription.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="photos/compSciDescription.png" class="d-block w-100" alt="...">
-                    </div>
-                    </div> <!-- carousel slides-->
-                    <button id="prev2" class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev" style="display: none">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button id="next2" class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next" style="display: none">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    </button>
-                    <button id="next1" class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    </button>
-                </div> <!-- coursel -->
+                <div class="carousel-item">
+                    <img src="photos/unsw.png" class="d-block w-100" alt="...">
                 </div>
-            </div> <!-- column right-->
-        </div> <!-- row -->
+              </div> <!-- carousel slides-->
+              <button id="prev" class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button id="next" class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div> 
+        </div>
+        <div class="col-sm-6 ess">
+          <div class="text-box"> 
+            <h2> Exercise Sports Science </h2>
+            <p><b> University of Sydney, 2020 - 2022 </b></p>
+            <p> I graduated with a bachelor's degree in exercise sports science in 2022 from the University of Sydney. I had a passion for health, fitness and sport. My time in the allied health industry was gratifying and stimulating. </p>
+          </div>
+          <div class="text-box"> 
+            <h2> Computer Science </h2>
+            <p><b> University of New South Wales, 2023 - Current</b></p>
+            <p> I'm thrilled to kick off a new chapter by pursuing a degree in Computer Science. I've always been fascinated by technology and how it shapes our world, so diving into programming, algorithms, and software development feels like a natural fit. What really drew me in was the problem-solving opportunities in the field.  </p>
+          </div>
+        </div>
+      </div> 
     </section>
 
-    <section class="heading-slideshow"> 
+    <!-- <section class="heading-slideshow"> 
         <div class="gallery">
             <div class="slider">
                 <img src="photos/integrated.png">
@@ -145,21 +134,50 @@
         <div class="heading hidden2">
             <p> PROFESSIONAL BACKGROUND </p>
         </div>
-    </section>
+    </section> -->
 
-    <section class="hidden five"> 
-        <div class="row">
-            <div class="col-sm-6">
-              <img src="photos/professional.png" class="start">
+    <section class="hidden new"> 
+      <div class="row">
+        <div class="col-sm-6 ess">
+            <div class="text-box"> 
+              <h2> Personal Trainer </h2>
+              <p><b> Integrated Fitness Campsie, 2022 - 2023 </b></p>
+              <p> I worked as a personal trainer at my at Integrated Fitness, Campsie. During my time there, I worked with over 50 clients, and developed an immense pride in helping each one achieve their goals. Personal training remains an extremely worthwhile endeavour. </p>
             </div>
-            <div class="col-sm-6">
-              <img src="photos/workPic.png" class="start">
+            <div class="text-box"> 
+              <h2> Loan Kit Technician </h2>
+              <p><b> Johnson & Johnson, 2023 </b></p>
+              <p> I started a new job in 2023 as a loan kit technician at Johnson & Johnson. This involved assembling and delivering crucial medical equipment to hospitals. Over my time there, our team collectively averaged delivering 5000 units per month. </p>
             </div>
         </div>
-
+        <div class="col-sm-6 ess">
+          <div id="carousel2" class="carousel slide carousel-vertical slide" data-interval="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner active">
+              <div class="carousel-item active">
+                  <img src="photos/integrated.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                  <img src="photos/j&j2.png" class="d-block w-100" alt="...">
+              </div>
+            </div> <!-- carousel slides-->
+            <button id="prev" class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button id="next" class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> 
+        </div>
+      </div> 
     </section>
 
-    <section class="heading-slideshow"> 
+    <!-- <section class="heading-slideshow"> 
         <div class="gallery with-vid">
             <div class="slider with-vid">
                 <video autoplay loop muted>
@@ -196,51 +214,66 @@
         <div class="heading hidden2">
             <p> MY HOBBIES </p>
         </div>
-    </section>
+    </section> -->
 
-    <section class="hidden seven"> 
-        <div class="row"  >
-            <div class="col-sm-6">
-              <img src="photos/hobbiesDescription.png" class="start">
-            </div>
-            <div class="col-sm-6">
-              <div class="transition-elem-X">
-                <div id="carousel3"class="carousel carousel-dark slide" data-interval="false">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  </div> <!-- carousel-indicators -->
-                  <div class="carousel-inner active">
-                    <div class="carousel-item active">
-                      <img src="photos/gym.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="photos/game.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="photos/food.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="photos/run.png" class="d-block w-100" alt="...">
-                    </div>
-                  </div> <!-- carousel slides-->
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div> <!-- coursel -->
+    <section class="hidden hobbies">
+      <div class="text-box hobby-description">
+        <h2> My favourite Hobbies </h2>
+        <p><b> When I am not coding, I am always doing something </b></p>
+        <p> While coding is my passion, I also value balance in life, and that means pursuing hobbies outside of my studies. When I'm not immersed in lines of code, you'll often find me doing something. Whether it is going to the gym, gaming, running or trying out a new restaurant, I feel like I am always doing something. I find joy in keeping busy, and I am always someone that is down to try something new.</p>
+      </div>
+      <div class="text-box hobby">
+        <div class="flip-card">
+          <div class="flip-card-content"> 
+              <div class="front">
+                <img class="hobby-photo" src="photos/hobby2.png">
+              </div>
+            <div class="back">
+              <div class="card mb-3"> 
+                <h2> Going to the gym </h2>
+                <p><b> Physical Health </b></p>
+                <p> I have been going to the gym consistently for the past few years. Taking care of my body is a top priority for me.</p>
+                <p> The gym has been a cornerstone of my routine and source of motivation and self-improvement. </p>
               </div>
             </div>
+          </div>
         </div>
-    </section>
 
-    <section class="heading-slideshow"> 
+        <div class="flip-card">
+          <div class="flip-card-content"> 
+              <div class="front">
+                <img class="hobby-photo" src="photos/hobby9.png">
+              </div>
+            <div class="back">
+              <div class="card mb-3"> 
+                <h2> Gaming </h2>
+                <p><b> A form of stress relief </b></p>
+                <p> When I've got free time, I often gravitate towards gaming. I've been playing games my whole life, and I love the comfort it gives me when I'm not working.</p>
+                <p> Currently, I play on my PS5. My favourite games to play is Spider-man, Call of Duty and the Far Cry. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-content"> 
+              <div class="front">
+                <img class="hobby-photo" src="photos/hobby4.png">
+              </div>
+            <div class="back">
+              <div class="card mb-3"> 
+                <h2> Running </h2>
+                <p><b> A new challenge </b></p>
+                <p> A habit that I recently picked up is running. It is relaxing, and it challenges me in a new way.</p>
+                <p> I love discovering new routes to run, and it is always good to run with friends. My goal by the end of 2024, is to run a half-marathon. The eventual goal is to run a full marathon. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- <section class="heading-slideshow"> 
         <div class="gallery">
             <div class="slider">
                 <img src="photos/Travel1.png">
@@ -267,54 +300,61 @@
         <div class="heading hidden2">
             <p> MY TRAVELS </p>
         </div>
-    </section>
+    </section> -->
 
-
-
-    <section class="hidden nine">
-        <div class="row" >
-            <div class="col-sm-6"  >
-              <div class="transition-elem-Y">
-                <div id="carousel4"class="carousel carousel-dark slide" data-interval="false">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  </div> <!-- carousel-indicators -->
-                  <div class="carousel-inner active">
-                    <div class="carousel-item active">
-                      <img src="photos/Bangkok.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="photos/Phuket.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="photos/Japan.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="photos/Vietnam.png" class="d-block w-100" alt="...">
-                    </div>
-                  </div> <!-- carousel slides-->
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div> <!-- coursel -->
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <img src="photos/travelDescription.png" class="start">
+    <section class="hidden travel">
+      <div id="carousel-travel" class="carousel slide " data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="photos/phuket-big.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Phuket, Thailand</h5>
+              <p> Was surreal feeding and bathing elpehants at the elephant sancturary. </p>
             </div>
           </div>
-
+          <div class="carousel-item">
+            <img src="photos/japan-big.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Japan</h5>
+              <p>On my trip to Japan, I visited Osaka, Kyoto and Tokyo. The nightlife was magical.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/photos/vietnam-big.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Da Nang, Vietnam</h5>
+              <p>Vietnam was so much fun. The culture, food and people is immaculate.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/photos/bangkok-big.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bangkok, Thailand</h5>
+              <p> Had such an amazing time in Bangkok. The shopping centres and food markets were my favourite.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-travel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button id="next-for-travel"class="carousel-control-next" type="button" data-bs-target="#carousel-travel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div id="travel-heading" class="heading hidden2">
+        <p> MY TRAVELS </p>
+    </div>
     </section>
 
-    <section class="heading-slideshow"> 
+    <!-- <section class="heading-slideshow"> 
         <div class="gallery">
             <div class="slider">
                 <img src="photos/code1.png">
@@ -335,15 +375,24 @@
         <div class="heading hidden2">
             <p> MY PASSION </p>
         </div>
-    </section>
+    </section> -->
     
-    <section class="hidden eleven">
+    <section class="hidden coding">
         <div class="row">
-            <div class="col-sm-6"  >
-              <img src="photos/CodingExplained.png" class="start">
+            <div class="col-sm-6 coding-left"  >
+              <div class="text-box coding">
+                <h2> My Passion </h2>
+                <p><b><i> "Programming is the closest thing we have to a superpower" </i> <br> - Drew Houston</b> </p>
+                <p> Coding for me, has always been an outlet to exercise my innate problem-solving abilities. I find it immensely fulfilling unravelling complex problems. There is not much that is more gratifying to me than being able to craft elegant solutions to these challenges. It is my vision to leverage my abilities to make meaningful difference in people's lives by tackling real-world problems.</p>
+              </div>
+              <div class="row coding-pics">
+                <img src="photos/code1.png">
+                <img src="photos/code3.png">
+
+              </div>
             </div>
-            <div class="col-sm-6">
-              <img src="photos/codingPic.png" class="start">
+            <div class="col-sm-6 coding-right">
+              <img src="photos/code4.png" class="start">
             </div>
           </div>
     </section>

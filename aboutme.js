@@ -27,8 +27,9 @@ hiddenElements2.forEach((el) => observer2.observe(el));
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('#next1').addEventListener('click', function() {
-      document.querySelector('#next2').click();
+    document.querySelector('#next-for-travel').addEventListener('click', function() {
+      let heading = document.querySelector('#travel-heading')
+      heading.style.display = "none";
     });
 
     document.querySelector('#prev1').addEventListener('click', function() {

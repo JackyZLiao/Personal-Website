@@ -1,13 +1,206 @@
-
-body {
+* {
     font-family: "Poppins", san-serif;
-    overflow-x: hidden;
 }
+body {
+    overflow-x: hidden;
+    background-color: #FFF9F1;;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.intro.text {
+    align-items: start;
+}
+.know-me {
+    font-size: 5vw;
+    font-weight: 600;
+}
+.welcome {
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: #015AFD;
+}
+
+.hidden.new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ess {
+    width: 45vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.text-box {
+    background-color: white;
+    height: 36vh;
+    width: 40vw;
+    padding: 30px;
+    box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.8);
+    border-radius: 30px;
+    font-size: 1.2vw;
+}
+
+.text-box h2 {
+    color: #015AFD;
+
+}
+
+.carousel-inner {
+    border-radius: 30px;
+    box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.8);
+}
+
+.integrated {
+    width: 40vw;
+}
+
+.text-box2 {
+    background-color: white;
+    height: 36vh;
+    width: 40vw;
+    padding: 30px;
+    box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.8);
+    border-radius: 30px;
+    font-size: 1.2vw;
+}
+
+.flip-card {
+    width: 25vw;
+    height: 46vh;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .flip-card-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-content {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+  }
+  
+  .front, .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border-radius: 5px;
+    backface-visibility: hidden;
+  }
+  
+  .back {
+    transform: rotateY( 180deg );
+    width: 100%;
+    height: 100%;
+  }
+
+.card {
+    width: 25vw;
+    font-size: 95%;
+    padding: 15px;
+    border: none;
+}
+.card-body {
+    padding-left: 10px;
+}
+
+.hobby-photo {
+    width: 25vw;
+    box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.8);
+    border-radius: 30px;
+}
+
+.hidden.hobbies {
+    height: 100vh;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text-box.hobby-description {
+    width: 95vw;
+    height: 30vh;
+}
+
+.text-box.hobby {
+    width: 95vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+}
+
+#carousel-travel {
+    width: 95vw;
+}
+
+.hidden.travel {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden.coding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col-sm-6.coding-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.col-sm-6.coding-left img {
+    width: 21vw;
+    padding: 0px;
+}
+.col-sm-6.coding-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row.coding-pics {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col-sm-6.coding-right img{
+    width: 45vw;
+}
+
+.text-box.coding {
+    width: 45vw;
+    height: 41vh;
+}
+
 
 /* Styling for sections  */
 section {
     display: grid;
-    height: 100vh;
+    height: 90vh;
 }
 .hidden {
     opacity: 0;
@@ -20,10 +213,16 @@ section {
 }
 
 .heading-slideshow{
-    background-color: black;
+    background-color: transparent;
+    height: 100vh;
     color: white;
     place-items: center;
     align-content: center;
+    margin-top: 5vh;
+    
+
+
+    /* box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.8); */
 }
 
 .hidden2 {
@@ -63,6 +262,13 @@ section {
     font-weight: 700;
 
 }
+.small-text {
+    margin-top: 0.1%;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1vw;
+}
+
 /* Styling for sections*/
 .start {
     display: block;
@@ -138,8 +344,10 @@ section {
     animation: 15s slide infinite linear;
 }
 .slider img {
-    height: 65vh;
+    height: 75vh;
     margin: 10px;
+    border-radius: 25px;
+    box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.8);
 }
 
 @keyframes slide {
@@ -170,5 +378,12 @@ section {
     position: relative;
     height: 65vh;
     margin: 10px;
+    border-radius: 25px;
+    box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.8);
+}
+
+img {
+    border-radius: 25px;
+    box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.8);
 }
 

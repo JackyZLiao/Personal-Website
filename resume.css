@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;;
+}
+
+body {
+    background-color: #EADFD4;
+}
+
+/* styling for nav bar*/
+.navbar-nav {
+    margin-left: auto;
+}
+.navbar {
+    background-color: transparent;
+    z-index: 1000;
+}
+.navbar-nav .nav-link {
+    font-family: "Poppins", sans-serif;;
+    font-size: 1.3vw;
+    font-weight: 550;
+    margin: 0 2vw;
+    color: black;
+}
+
+.navbar-brand {
+    color: black;
+    margin-left: 2vw;
+    font-size: 2vw;
+    font-weight: 700;
+
+}
+
+.small-text {
+    margin-top: 0.1%;
+    color: #015AFD;
+    font-weight: 500;
+    font-size: 1.1vw;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    width: 70vw;
+    opacity: 0;
+    transform: translateY(150%);
+    transition: all 1s;
+}
+
+.section {
+    height: 50vh;
+    width: 70vw;
+    box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.8);
+    border-radius: 40px;
+    padding: 30px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+    filter: blur(5px);
+    background-color: white;
+
+
+}
+.section.skills {
+    height: 65vh;
+}
+
+.section.projects {
+    margin-bottom: 5vh;
+}
+
+.section.education {
+    height: 27vh;
+}
+.section.education2 {
+    margin-top: 5vh;
+    height: 27vh;
+}
+.section.job1 {
+    height: 35vh;
+}
+.section.job2 {
+    margin-top: 5vh;
+    height: 38vh;
+}
+
+.section.project {
+    margin-bottom: 5vh;
+    height: 42vh;
+}
+
+
+.heading.with-button {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.button {
+    background-color: #015AFD;
+    border: none;
+    width: 15vw;
+    border-radius: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+.button:hover{
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    scale: 0.95;
+}
+
+.button:active{
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    scale: 1.05;
+}
+
+p {
+    font-size: 1.2vw;
+}
+
+li {
+    font-size: 1.2vw;
+}
+
+h4 {
+    color: #015AFD;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0)
+}
+
+.show2 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
