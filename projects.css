@@ -73,22 +73,35 @@ video {
     height: 100%;
   }
 
-    .navbar-nav {
-        text-align: center;
-        margin: 0 auto;
-    }
+/* styling for nav bar*/
+.navbar-nav {
+    margin-left: auto;
+}
+.navbar {
+    background-color: transparent;
+    z-index: 1000;
+}
+.navbar-nav .nav-link {
+    font-family: "Poppins", sans-serif;;
+    font-size: 1.3vw;
+    font-weight: 550;
+    margin: 0 2vw;
+    color: black;
+}
 
-    .navbar {
-        background-color: white;
-    }
-    
-    .navbar-nav .nav-link {
-        font-size: 1.3vw;
-        margin: 0 2vw;
-        margin-left: 3vw;
-        font-family: "Poppins", sans-serif;
-        font-weight: 700;
-    }
+.navbar-brand {
+    color: black;
+    margin-left: 2vw;
+    font-size: 2vw;
+    font-weight: 700;
+
+}
+
+.small-text {
+    margin-top: 0.1%;
+    font-weight: 500;
+    font-size: 1.1vw;
+}
     
     #row2 {
         margin-top: 25%;
