@@ -3,38 +3,16 @@
 }
 body {
     overflow-x: hidden;
-    background-color: #FFF9F1;;
 }
 
-.intro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-.intro.text {
-    align-items: start;
-}
-.know-me {
-    font-size: 5vw;
-    font-weight: 600;
-}
-.welcome {
-    font-size: 1.5vw;
-    font-weight: 500;
-    color: #015AFD;
-}
-
-.hidden.new {
+.hidden.education-professional {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.ess {
-    width: 45vw;
+.about-me {
+    width: 47vw;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -44,16 +22,16 @@ body {
 
 .text-box {
     background-color: white;
-    height: 36vh;
-    width: 40vw;
-    padding: 30px;
+    width: 100%;
+    padding: 3%;
     box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.8);
     border-radius: 30px;
     font-size: 1.2vw;
 }
 
-.text-box h2 {
+h2 {
     color: #015AFD;
+    font-size: 2.5vw;
 
 }
 
@@ -61,6 +39,7 @@ body {
     border-radius: 30px;
     box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.8);
 }
+
 
 .integrated {
     width: 40vw;
@@ -70,15 +49,15 @@ body {
     background-color: white;
     height: 36vh;
     width: 40vw;
-    padding: 30px;
+    padding: 5%;
     box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.8);
     border-radius: 30px;
     font-size: 1.2vw;
 }
 
 .flip-card {
-    width: 25vw;
-    height: 46vh;
+    width: 31%;
+    height: 29vw;
     perspective: 1000px;
     display: flex;
     justify-content: center;
@@ -87,7 +66,6 @@ body {
   .flip-card-content {
     position: absolute;
     width: 100%;
-    height: 100%;
     background-color: transparent;
     transition: transform 1s;
     transform-style: preserve-3d;
@@ -100,7 +78,6 @@ body {
   
   .front, .back {
     position: absolute;
-    height: 100%;
     width: 100%;
     background: transparent;
     border-radius: 5px;
@@ -114,49 +91,48 @@ body {
   }
 
 .card {
-    width: 25vw;
-    font-size: 95%;
+    width: 100%;
+    font-size: 1.2vw;
     padding: 15px;
     border: none;
+    background-color: transparent;
 }
 .card-body {
     padding-left: 10px;
 }
 
 .hobby-photo {
-    width: 25vw;
+    width: 100%;
     box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.8);
     border-radius: 30px;
 }
 
 .hidden.hobbies {
-    height: 100vh;;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .text-box.hobby-description {
-    width: 95vw;
-    height: 30vh;
+    width: 94%;
+    height: 30%;
+    margin-bottom: 2%
 }
 
-.text-box.hobby {
-    width: 95vw;
-    height: 60vh;
+.hobby-cards {
+    width: 94%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     align-items: center;
 }
 
 #carousel-travel {
-    width: 95vw;
+    width: 94%;
 }
 
 .hidden.travel {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,39 +144,52 @@ body {
     justify-content: center;
 }
 .col-sm-6.coding-left {
+    padding: 1%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
 }
 .col-sm-6.coding-left img {
     width: 21vw;
     padding: 0px;
 }
-.col-sm-6.coding-right {
+
+.row.description {
     display: flex;
     justify-content: center;
+}
+
+.col-sm-6.coding-right {
+    display: flex;
+    justify-content: start;
     align-items: center;
+    padding: 1%;
 }
 .row.coding-pics {
-    margin-top: 3vh;
+    padding-left: 2%;
+    padding-right: 2%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+.row.coding {
+    width: 97%;
 }
 
 .col-sm-6.coding-right img{
-    width: 45vw;
+    width: 99%;
 }
 
 .text-box.coding {
-    width: 45vw;
-    height: 41vh;
+    width: 95%;
+    height: 95%;
 }
+
 
 
 /* Styling for sections  */
 section {
     display: grid;
-    height: 90vh;
+    margin-bottom: 3%;
 }
 .hidden {
     opacity: 0;
@@ -214,7 +203,7 @@ section {
 
 .heading-slideshow{
     background-color: transparent;
-    height: 100vh;
+    height: 90vh;
     color: white;
     place-items: center;
     align-content: center;
@@ -275,66 +264,6 @@ section {
     width: 100%;
 }
 
-.hidden.one {
-    height: 105vh;
-}
-.hidden.two {
-    background-color: black;
-    color: white;
-    place-items: center;
-    align-content: center;
-}
-.hidden.four {
-    background-color: black;
-    color: white;
-    display: grid;
-    place-items: center;
-    align-content: center;
-    height: 50vw;
-}
-.hidden.five {
-    place-items: center;
-    align-content: center;
-    display: flex;
-    justify-content: space-around;
-}
-.work {
-    width: 100%;
-}
-
-.work-photo:nth-child(0) {
-    transition-delay: 200ms;
-}
-.hidden.six {
-    background-color: black;
-    color: white;
-    display: grid;
-    place-items: center;
-    align-content: center;
-}
-
-.hidden.seven {
-    display: block;
-    width: 100%;
-}
-
-.hidden.eight {
-    background-color: black;
-    color: white;
-    display: grid;
-    place-items: center;
-    align-content: center;
-    height: 50vw;
-}
-
-.hidden.ten {
-    background-color: black;
-    color: white;
-    display: grid;
-    place-items: center;
-    align-content: center;
-}
-
 .gallery {
     white-space: nowrap; 
 }
@@ -344,7 +273,7 @@ section {
     animation: 15s slide infinite linear;
 }
 .slider img {
-    height: 75vh;
+    height: 38vw;;
     margin: 10px;
     border-radius: 25px;
     box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.8);
@@ -361,7 +290,7 @@ section {
 
 .heading {
     position: absolute;
-    font-size: 11vh;
+    font-size: 600%;
     font-weight: 600;
     color: white;
 }
