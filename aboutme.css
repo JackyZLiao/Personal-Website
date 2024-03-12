@@ -203,15 +203,12 @@ section {
 
 .heading-slideshow{
     background-color: transparent;
-    height: 90vh;
+    height: 100vh;
     color: white;
     place-items: center;
     align-content: center;
-    margin-top: 5vh;
-    
-
-
-    /* box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.8); */
+    background-color: black;
+    box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.8);
 }
 
 .hidden2 {
@@ -235,6 +232,7 @@ section {
     background-color: transparent;
     z-index: 1000;
     mix-blend-mode: difference;
+    margin-top: 1vh;
 }
 .navbar-nav .nav-link {
     font-family: "Poppins", sans-serif;;
@@ -270,7 +268,7 @@ section {
 
 .slider {
     display: inline-block;
-    animation: 15s slide infinite linear;
+    animation: 25s slide infinite linear;
 }
 .slider img {
     height: 38vw;;
@@ -290,7 +288,7 @@ section {
 
 .heading {
     position: absolute;
-    font-size: 600%;
+    font-size: 7vw;
     font-weight: 600;
     color: white;
 }
